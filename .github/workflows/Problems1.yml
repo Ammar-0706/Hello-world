@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create some dummy files
-        run: echo "Hello world !!"" > Task2dummy.txt
+        run: echo "Hello world !!" > Task2dummy.txt
   TASK3:
     name: Set some variable and print the same variable.
     runs-on: ubuntu-latest
