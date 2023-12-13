@@ -10,12 +10,15 @@ jobs:
       - name: Checkout new branch
         run: git checkout -b Task1branch
   TASK2:
+    name: Creating Dummy files
+    needs: TASK1
     runs-on: ubuntu-latest
     steps:
-      - name: Create some dummy files
+      - name: Create dummy text file
         run: echo "Hello world !!" > Task2dummy.txt
   TASK3:
     name: Set some variable and print the same variable.
+    needs: TASK2
     runs-on: ubuntu-latest
     env: 
       Variable1 : "Hello World"
